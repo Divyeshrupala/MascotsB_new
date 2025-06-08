@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Spoken English - MascotsB</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/custom-style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#fe3f40",
+            },
+            fontFamily: {
+              poppins: ["Poppins", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      h1, h2, h3, h4, h5 {
+        color: #fe3f40 !important;
+      }
+
+      p {
+        color: #555;
+      }
+
+      .btn-primary {
+        background-color: #fe3f40 !important;
+        border: none;
+      }
+
+      .nav-link {
+        color: #000 !important;
+        font-weight: 500;
+        margin-right: 15px;
+      }
+
+      .nav-link:hover,
+      .nav-link.active {
+        color: #fe3f40 !important;
+      }
+
+      .card-custom {
+        box-shadow: 0 4px 6px rgba(254, 63, 64, 0.3);
+        border-top: 4px solid #fe3f40;
+      }
+    </style>
+  </head>
+  <body class="font-poppins bg-white text-gray-800">
+    <header class="header-area header-sticky bg-white border-b shadow-sm fixed-top">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <nav class="main-nav d-flex justify-content-between align-items-center py-3">
+          <!-- Logo -->
+          <a href="index.html" class="logo fw-bold fs-4" style="color: #007bff; text-decoration: none">
+            Mascots<span style="color: #fe3f40">B</span>
+          </a>
+
+          <!-- Desktop Nav -->
+          <ul class="nav d-none d-lg-flex">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About Us</a></li>
+            <li><a href="spoken-english.html" class="nav-link active">Spoken English</a></li>
+            <li><a href="ielts.html" class="nav-link">IELTS Coaching</a></li>
+            <li><a href="pte.html" class="nav-link">PTE Coaching</a></li>
+            <li><a href="visa.html" class="nav-link">Visa Counselling</a></li>
+            <li>
+              <a
+                href="contact.html"
+                class="btn rounded-xl text-white px-4 py-2 ms-3 font-medium transition-all duration-300"
+                style="background-color: #fe3f40; border: none"
+                onmouseover="this.style.backgroundColor='#007bff'"
+                onmouseout="this.style.backgroundColor='#fe3f40'"
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
+
+          <!-- Mobile Toggle -->
+          <div class="d-lg-none fs-3 cursor-pointer" id="mobileMenuToggle">☰</div>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Nav -->
+  <div id="mobileMenu" class="d-lg-none bg-white shadow-md rounded px-3 py-3 mt-1 mx-3" style="display: none;">
+    <ul class="nav flex-column">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="about.html" class="nav-link">About Us</a></li>
+      <li><a href="spoken-english.html" class="nav-link active">Spoken English</a></li>
+      <li><a href="ielts.html" class="nav-link">IELTS Coaching</a></li>
+      <li><a href="pte.html" class="nav-link">PTE Coaching</a></li>
+      <li><a href="visa.html" class="nav-link">Visa Counselling</a></li>
+      <li>
+        <a
+          href="contact.html"
+          class="btn rounded-xl text-white px-4 py-2 mt-2 font-medium transition-all duration-300 w-100"
+          style="background-color: #fe3f40; border: none"
+          onmouseover="this.style.backgroundColor='#007bff'"
+          onmouseout="this.style.backgroundColor='#fe3f40'"
+        >
+          Contact
+        </a>
+      </li>
+    </ul>
+  </div>
+</header>
+
+    <div style="height: 80px"></div>
+
+    <!-- Spoken English Intro + Highlights with Background -->
+<section class="py-20 px-4 bg-cover bg-center bg-no-repeat" style="background-image: url('assets/images/spoken-bg.jpg');">
+  <div class="bg-white bg-opacity-80 backdrop-blur-md rounded-xl p-10 max-w-6xl mx-auto">
+    <div class="text-center mb-12">
+      <h2 class="text-4xl font-bold mb-4 text-primary">Master Fluent Spoken English</h2>
+      <p class="text-gray-700 text-lg max-w-3xl mx-auto">
+        Whether you're a student, working professional, or aspiring to study or work abroad, our Spoken English program will help you build confidence, clarity, and fluency in English through real-life conversations, practical exercises, and expert mentorship.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white p-6 rounded-xl border-t-4 border-primary shadow-md hover:shadow-lg transition">
+        <h3 class="text-lg font-semibold text-primary">Personalized Coaching</h3>
+        <p>
+          Small batch sizes with individual attention. Learn at your own pace with customized plans and continuous feedback.
+        </p>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl border-t-4 border-primary shadow-md hover:shadow-lg transition">
+        <h3 class="text-lg font-semibold text-primary">Real-Life Practice</h3>
+        <p>
+          Engage in day-to-day dialogues, debates, and interviews. We train you for real conversations — not just textbook grammar.
+        </p>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl border-t-4 border-primary shadow-md hover:shadow-lg transition">
+        <h3 class="text-lg font-semibold text-primary">Public Speaking Skills</h3>
+        <p>
+          Build your confidence on stage and in meetings. Our trainers will polish your presentation and storytelling abilities.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Why Choose Us with Light Blue Background -->
+<section class="py-16 px-4" style="background-color: #e6f4ff;">
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 class="text-3xl font-bold text-primary mb-6">Why Choose MascotsB?</h2>
+    <div class="grid md:grid-cols-2 gap-10 text-left">
+      <div class="bg-white rounded-xl p-6 shadow-md border-t-4 border-primary">
+        <h4 class="text-lg font-semibold text-primary">Certified Trainers</h4>
+        <p>Our faculty includes experienced professionals with a deep understanding of language instruction and fluency development.</p>
+      </div>
+      <div class="bg-white rounded-xl p-6 shadow-md border-t-4 border-primary">
+        <h4 class="text-lg font-semibold text-primary">Flexible Timings</h4>
+        <p>Morning, evening, and weekend batches available. Perfect for students, housewives, and working professionals.</p>
+      </div>
+      <div class="bg-white rounded-xl p-6 shadow-md border-t-4 border-primary">
+        <h4 class="text-lg font-semibold text-primary">Modern Tools & Tests</h4>
+        <p>We use AI-based tools, fluency checkers, and mock interview setups to ensure you're ready for real-world situations.</p>
+      </div>
+      <div class="bg-white rounded-xl p-6 shadow-md border-t-4 border-primary">
+        <h4 class="text-lg font-semibold text-primary">Affordable Packages</h4>
+        <p>High-quality English coaching at reasonable prices. Get access to materials, worksheets, and lifetime speaking groups.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Call to Action -->
+    <section class="py-12 bg-white text-center">
+      <h2 class="text-4xl font-bold mb-4 text-primary">Ready to Speak with Confidence?</h2>
+      <p class="text-lg text-gray-700 mb-6">Join MascotsB Spoken English program and transform the way you communicate.</p>
+      <a href="contact.html" class="btn btn-primary text-white px-6 py-3 rounded-xl text-lg">
+        Enroll Now
+      </a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white text-center py-4 border-t border-gray-200">
+  <p class="text-black font-medium">
+    &copy; 2025 MascotsB. All Rights Reserved.<br />
+    Design by
+    <a href="https://www.linkedin.com/in/divyeshrupala157" class="text-blue-600 hover:text-blue-800 underline">Divyesh Rupala</a>
+  </p>
+</footer>
+<script src="assets/js/menu-toggle.js"></script>
+  </body>
+</html>

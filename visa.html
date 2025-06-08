@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Visa Counselling - MascotsB</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Bootstrap CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#fe3f40",
+            },
+            fontFamily: {
+              poppins: ["Poppins", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      h1, h2, h3, h4, h5, h6 {
+        color: #fe3f40 !important;
+      }
+      p {
+        color: #555;
+      }
+      .nav-link {
+        color: #000 !important;
+        font-weight: 500;
+        margin-right: 15px;
+      }
+      .nav-link:hover,
+      .nav-link.active {
+        color: #fe3f40 !important;
+      }
+      .btn-primary {
+        background-color: #fe3f40 !important;
+        border: none;
+      }
+      footer a {
+        color: #fe3f40;
+      }
+      footer a:hover {
+        color: #e33335;
+      }
+
+
+  @keyframes scrollBackground {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-scroll-bg {
+    animation: scrollBackground 40s linear infinite;
+  }
+
+    </style>
+  </head>
+
+  <body class="font-poppins bg-white text-gray-800">
+  <header class="header-area header-sticky bg-white border-b shadow-sm fixed-top">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <nav class="main-nav d-flex justify-content-between align-items-center py-3">
+          <!-- Logo -->
+          <a href="index.html" class="logo fw-bold fs-4" style="color: #007bff; text-decoration: none">
+            Mascots<span style="color: #fe3f40">B</span>
+          </a>
+
+          <!-- Desktop Nav -->
+          <ul class="nav d-none d-lg-flex">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About Us</a></li>
+            <li><a href="spoken-english.html" class="nav-link">Spoken English</a></li>
+            <li><a href="ielts.html" class="nav-link">IELTS Coaching</a></li>
+            <li><a href="pte.html" class="nav-link">PTE Coaching</a></li>
+            <li><a href="visa.html" class="nav-link active">Visa Counselling</a></li>
+            <li>
+              <a
+                href="contact.html"
+                class="btn rounded-xl text-white px-4 py-2 ms-3 font-medium transition-all duration-300"
+                style="background-color: #fe3f40; border: none"
+                onmouseover="this.style.backgroundColor='#007bff'"
+                onmouseout="this.style.backgroundColor='#fe3f40'"
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
+
+          <!-- Mobile Toggle -->
+          <div class="d-lg-none fs-3 cursor-pointer" id="mobileMenuToggle">☰</div>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Nav -->
+  <div id="mobileMenu" class="d-lg-none bg-white shadow-md rounded px-3 py-3 mt-1 mx-3" style="display: none;">
+    <ul class="nav flex-column">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="about.html" class="nav-link">About Us</a></li>
+      <li><a href="spoken-english.html" class="nav-link">Spoken English</a></li>
+      <li><a href="ielts.html" class="nav-link">IELTS Coaching</a></li>
+      <li><a href="pte.html" class="nav-link">PTE Coaching</a></li>
+      <li><a href="visa.html" class="nav-link active">Visa Counselling</a></li>
+      <li>
+        <a
+          href="contact.html"
+          class="btn rounded-xl text-white px-4 py-2 mt-2 font-medium transition-all duration-300 w-100"
+          style="background-color: #fe3f40; border: none"
+          onmouseover="this.style.backgroundColor='#007bff'"
+          onmouseout="this.style.backgroundColor='#fe3f40'"
+        >
+          Contact
+        </a>
+      </li>
+    </ul>
+  </div>
+</header>
+
+
+    <div style="height: 80px"></div>
+
+    <!-- Scrolling Background Image Hero Section -->
+<section class="relative h-screen overflow-hidden bg-[#e6f2ff]">
+  <!-- Scrolling Background Image Layer -->
+  <div class="absolute top-0 left-0 w-full h-full z-0">
+    <div class="animate-scroll-bg h-full w-[200%] flex">
+      <img src="assets/images/spoken-english.jpg" class="w-1/2 h-full object-cover" />
+      <img src="assets/images/IELTS.png" class="w-1/2 h-full object-cover" />
+      <img src="assets/images/PTE.png" class="w-1/2 h-full object-cover" />
+    </div>
+  </div>
+
+  <!-- Foreground Content -->
+  <div class="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 bg-[#e6f2ff]/80">
+    <h1 class="text-4xl md:text-5xl font-bold text-primary mb-4">Expert Visa Counselling Services</h1>
+    <p class="text-lg text-gray-700 max-w-2xl mb-6">
+      Let us guide your journey abroad — with complete visa documentation support, professional advice, and a track record of successful applications.
+    </p>
+    <a href="contact.html" class="px-6 py-3 text-white bg-primary rounded-xl text-lg font-semibold transition-all duration-300 hover:bg-[#e33335]">
+      Get Free Consultation
+    </a>
+  </div>
+</section>
+
+
+
+
+    <!-- Services -->
+    <section class="py-16 bg-white">
+      <div class="max-w-6xl mx-auto px-4 text-center mb-12">
+        <h2 class="text-3xl font-bold text-primary mb-4">Our Visa Counselling Covers</h2>
+        <p class="text-gray-700 max-w-3xl mx-auto">
+          From choosing the right country to preparing for the interview—we help you at every step of your visa journey.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div class="bg-white p-6 rounded-xl border-t-4 border-primary shadow-md hover:shadow-xl transition-all duration-300">
+          <h4 class="text-xl font-semibold text-primary mb-2">Student Visa</h4>
+          <p class="text-sm text-gray-700">
+            Apply confidently for student visas to Canada, UK, Australia, USA, and more—with guidance on SOPs, financials, and documentation.
+          </p>
+        </div>
+        <div class="bg-white p-6 rounded-xl border-t-4 border-primary shadow-md hover:shadow-xl transition-all duration-300">
+          <h4 class="text-xl font-semibold text-primary mb-2">Tourist & Visitor Visa</h4>
+          <p class="text-sm text-gray-700">
+            Planning to visit friends or family abroad? We help you file smooth and successful short-term visa applications.
+          </p>
+        </div>
+        <div class="bg-white p-6 rounded-xl border-t-4 border-primary shadow-md hover:shadow-xl transition-all duration-300">
+          <h4 class="text-xl font-semibold text-primary mb-2">PR & Work Visa</h4>
+          <p class="text-sm text-gray-700">
+            Our expert consultants assist with long-term visa goals like permanent residency and work permits in multiple countries.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose MascotsB -->
+    <section class="py-16  text-center">
+  <div class="max-w-5xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-primary mb-6">Why Choose MascotsB for Visa Assistance?</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white p-6 rounded-xl border-t-4 border-primary shadow-md hover:shadow-xl transition-all duration-300">
+        <h4 class="text-lg font-semibold text-primary mb-2">High Approval Rate</h4>
+        <p class="text-sm text-gray-700">We’ve successfully helped hundreds of clients secure visas with properly organized applications.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl border-t-4 border-primary shadow-md hover:shadow-xl transition-all duration-300">
+        <h4 class="text-lg font-semibold text-primary mb-2">End-to-End Support</h4>
+        <p class="text-sm text-gray-700">From choosing the right course to booking your visa appointment—we're with you all the way.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl border-t-4 border-primary shadow-md hover:shadow-xl transition-all duration-300">
+        <h4 class="text-lg font-semibold text-primary mb-2">Transparent Guidance</h4>
+        <p class="text-sm text-gray-700">No false promises. We guide based on your profile, eligibility, and realistic success chances.</p>
+      </div>
+    </div>
+    <a href="contact.html" class="mt-10 inline-block px-6 py-3 text-white bg-primary rounded-xl text-lg font-semibold transition-all duration-300 hover:bg-[#e33335]">
+      Speak to Our Consultant
+    </a>
+  </div>
+</section>
+    <!-- Footer -->
+    <footer class="bg-white text-center py-4 border-t border-gray-200">
+      <p class="text-black font-medium">
+        &copy; 2025 MascotsB. All Rights Reserved.<br />
+        Design by
+        <a href="https://www.linkedin.com/in/divyeshrupala157" class="text-[#fe3f40] hover:text-[#e33335] underline">Divyesh Rupala</a>
+      </p>
+    </footer>
+    <script src="assets/js/menu-toggle.js"></script>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+/* custom-style.css */
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+}
+
+a {
+  color: #fe3f40;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #e33335;
+}
+
+/* Navbar */
+.header-area .nav-link {
+  color: #fe3f40;
+  margin-right: 20px;
+  font-weight: 500;
+}
+
+.header-area .nav-link:hover,
+.header-area .nav-link.active {
+  color: #e33335;
+}
+
+/* Logo */
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fe3f40;
+}
+
+/* Headings and Important Text */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #fe3f40;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background-color: #fe3f40;
+  border: none;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #e33335;
+  color: #fff;
+}
+
+footer a {
+  color: #fe3f40;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #e33335;
+}

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About Us - MascotsB</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Your Custom CSS -->
+    <link rel="stylesheet" href="assets/css/custom-style.css" />
+
+    <!-- Tailwind for spacing/custom section styling only -->
+
+    <style>
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        color: #007bff !important;
+      }
+
+      p {
+        color: #555; /* Or change to #fe3f40 if you want red text in paragraphs */
+      }
+
+      .text-primary {
+        color: #007bff !important;
+      }
+
+      footer a {
+        color: #fe3f40;
+      }
+
+      footer a:hover {
+        color: #e33335;
+      }
+
+      /* Fix all nav links to black */
+      .nav-link {
+        color: #000 !important; /* Black text */
+        font-weight: 500;
+        margin-right: 15px;
+      }
+
+      .nav-link:hover,
+      .nav-link.active {
+        color: #fe3f40 !important; /* Hover or active link is red */
+      }
+
+      .btn-primary {
+        background-color: #fe3f40 !important;
+        border: none;
+      }
+
+      div[style*="box-shadow"] {
+        outline: none;
+        box-shadow: 0 4px 6px rgba(254, 63, 64, 0.3); /* your light red shadow */
+        border-top-color: #fe3f40 !important; /* force light red top border */
+      }
+    </style>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#fe3f40",
+            },
+            fontFamily: {
+              poppins: ["Poppins", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body class="font-poppins bg-white text-gray-800">
+    <header class="header-area header-sticky bg-white border-b shadow-sm fixed-top">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <nav class="main-nav d-flex justify-content-between align-items-center py-3">
+          <!-- Logo -->
+          <a href="index.html" class="logo fw-bold fs-4" style="color: #007bff; text-decoration: none">
+            Mascots<span style="color: #fe3f40">B</span>
+          </a>
+
+          <!-- Desktop Nav -->
+          <ul class="nav d-none d-lg-flex">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link active">About Us</a></li>
+            <li><a href="spoken-english.html" class="nav-link">Spoken English</a></li>
+            <li><a href="ielts.html" class="nav-link">IELTS Coaching</a></li>
+            <li><a href="pte.html" class="nav-link">PTE Coaching</a></li>
+            <li><a href="visa.html" class="nav-link">Visa Counselling</a></li>
+            <li>
+              <a
+                href="contact.html"
+                class="btn rounded-xl text-white px-4 py-2 ms-3 font-medium transition-all duration-300"
+                style="background-color: #fe3f40; border: none"
+                onmouseover="this.style.backgroundColor='#007bff'"
+                onmouseout="this.style.backgroundColor='#fe3f40'"
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
+
+          <!-- Mobile Toggle -->
+          <div class="d-lg-none fs-3 cursor-pointer" id="mobileMenuToggle">☰</div>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Nav -->
+  <div id="mobileMenu" class="d-lg-none bg-white shadow-md rounded px-3 py-3 mt-1 mx-3" style="display: none;">
+    <ul class="nav flex-column">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="about.html" class="nav-link active">About Us</a></li>
+      <li><a href="spoken-english.html" class="nav-link">Spoken English</a></li>
+      <li><a href="ielts.html" class="nav-link">IELTS Coaching</a></li>
+      <li><a href="pte.html" class="nav-link">PTE Coaching</a></li>
+      <li><a href="visa.html" class="nav-link ">Visa Counselling</a></li>
+      <li>
+        <a
+          href="contact.html"
+          class="btn rounded-xl text-white px-4 py-2 mt-2 font-medium transition-all duration-300 w-100"
+          style="background-color: #fe3f40; border: none"
+          onmouseover="this.style.backgroundColor='#007bff'"
+          onmouseout="this.style.backgroundColor='#fe3f40'"
+        >
+          Contact
+        </a>
+      </li>
+    </ul>
+  </div>
+</header>
+
+    <!-- Spacer for Sticky Header -->
+    <div style="height: 80px"></div>
+
+    <!-- About Us -->
+    <section id="about" class="px-4 py-16 bg-gray-50">
+      <div class="max-w-5xl mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-4 text-primary">About Us</h2>
+        <p class="text-gray-600 mb-10 max-w-2xl mx-auto">
+          We are a professional institute dedicated to helping individuals
+          master English communication and achieve their dreams of studying,
+          working, or settling abroad through expert visa guidance.
+        </p>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div
+            class="bg-white p-6 rounded-xl border-t-4 border-primary shadow-md hover:shadow-lg transition"
+          >
+            <h3 class="text-2xl font-semibold text-primary mb-3">
+              Spoken English Coaching
+            </h3>
+            <p class="text-gray-700">
+              Our English speaking classes are designed for learners of all
+              levels. We focus on fluency, grammar, pronunciation, public
+              speaking, and interview preparation.
+            </p>
+          </div>
+          <div
+            class="bg-white p-6 rounded-xl border-t-4 border-primary shadow-md hover:shadow-lg transition"
+          >
+            <h3 class="text-2xl font-semibold text-primary mb-3">
+              Visa Consulting Services
+            </h3>
+            <p class="text-gray-700">
+              We provide trusted and transparent visa guidance for countries
+              like Canada, USA, UK, Australia, and more. From documentation to
+              interview prep, our experienced consultants assist you every step
+              of the way.
+            </p>
+          </div>
+          <div
+    class="bg-white p-6 rounded-xl border-t-4 border-primary shadow-md hover:shadow-lg transition"
+  >
+    <h3 class="text-2xl font-semibold text-primary mb-3">
+      IELTS Coaching
+    </h3>
+    <p class="text-gray-700">
+      Get comprehensive training for IELTS Academic and General modules.
+      We offer practice sessions, mock tests, and expert tips to boost
+      your band score.
+    </p>
+  </div>
+
+  <div
+    class="bg-white p-6 rounded-xl border-t-4 border-primary shadow-md hover:shadow-lg transition"
+  >
+    <h3 class="text-2xl font-semibold text-primary mb-3">
+      PTE Coaching
+    </h3>
+    <p class="text-gray-700">
+      Achieve success in the PTE exam with our personalized training
+      approach, real-time test simulation, and performance tracking.
+    </p>
+  </div>
+</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission -->
+    <!-- Mission -->
+<section class="py-16 bg-blue-50">
+  <div class="max-w-6xl mx-auto px-4 text-center mb-12">
+    <h3 class="text-4xl font-bold text-primary mb-4">Our Mission</h3>
+    <p class="text-gray-700 max-w-3xl mx-auto">
+      To empower students with world-class communication skills and the right visa guidance, helping them succeed globally in education and careers.
+    </p>
+  </div>
+
+  <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto px-4">
+    <!-- Spoken English -->
+    <div class="bg-white p-6 rounded-xl border-t-4 border-primary shadow-md hover:shadow-lg transition">
+      <img
+        src="assets/images/Spoken-Eng.png"
+        alt="Spoken English"
+        class="rounded-lg mb-4 w-full h-48 object-cover"
+      />
+      <h4 class="text-xl font-semibold text-primary mb-2">
+        Spoken English Coaching
+      </h4>
+      <p class="text-gray-700 text-sm">
+        We help students become fluent in English with interactive sessions, real-life conversation practice, and professional confidence building.
+      </p>
+    </div>
+
+    <!-- IELTS Coaching -->
+    <div class="bg-white p-6 rounded-xl border-t-4 border-primary shadow-md hover:shadow-lg transition">
+      <img
+        src="assets/images/IELTS.png"
+        alt="IELTS Coaching"
+        class="rounded-lg mb-4 w-full h-48 object-cover"
+      />
+      <h4 class="text-xl font-semibold text-primary mb-2">
+        IELTS Coaching
+      </h4>
+      <p class="text-gray-700 text-sm">
+        Our expert-led IELTS coaching covers all four modules—Listening, Reading, Writing, and Speaking—to help you achieve your desired band score.
+      </p>
+    </div>
+
+    <!-- PTE Coaching -->
+    <div class="bg-white p-6 rounded-xl border-t-4 border-primary shadow-md hover:shadow-lg transition">
+      <img
+        src="assets/images/PTE.png"
+        alt="PTE Coaching"
+        class="rounded-lg mb-4 w-full h-48 object-cover"
+      />
+      <h4 class="text-xl font-semibold text-primary mb-2">
+        PTE Coaching
+      </h4>
+      <p class="text-gray-700 text-sm">
+        Prepare for the Pearson Test of English (PTE) with our smart training tools, AI-based mock tests, and targeted strategies for top scores.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- footer -->
+
+    <footer class="bg-white text-center py-4 border-t border-gray-200">
+  <p class="text-black font-medium">
+    &copy; 2025 MascotsB. All Rights Reserved.<br />
+    Design by
+    <a href="https://www.linkedin.com/in/divyeshrupala157" class="text-blue-600 hover:text-blue-800 underline">Divyesh Rupala</a>
+  </p>
+</footer>
+<script src="assets/js/menu-toggle.js"></script>
+  </body>
+</html>

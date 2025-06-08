@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>MascotsB --Spoken English</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="assets/css/templatemo-space-dynamic.css" />
+    <link rel="stylesheet" href="assets/css/animated.css" />
+    <link rel="stylesheet" href="assets/css/owl.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <style>
+    /* Container for the slider */
+.testimonial-slider {
+  max-width: 800px;       /* Increased width from 600px */
+  margin: 50px auto;      /* Slightly more vertical margin */
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;    /* Slightly more rounded */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12); /* Stronger shadow */
+  background: white;
+  font-family: 'Poppins', sans-serif;
+  min-height: 260px;      /* Ensure container height is bigger */
+}
+
+/* Slides container */
+.slides {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+  width: 400%; /* Assuming 4 slides */
+}
+
+/* Each slide */
+.slide {
+  flex: 0 0 100%;
+  padding: 30px 70px; /* Increase horizontal padding to leave space for arrows */
+  box-sizing: border-box;
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #333;
+  border-top: 6px solid #fe3f40;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+
+.slide p {
+  margin-bottom: 20px;    /* More spacing below paragraph */
+}
+
+.slide h4 {
+  font-weight: 700;       /* Bolder */
+  color: #fe3f40;
+  margin: 0 0 6px 0;
+  font-size: 1.3rem;      /* Larger name */
+}
+
+.slide span {
+  font-weight: 400;
+  color: #777;
+  font-size: 1rem;        /* Larger subtitle */
+}
+
+/* Navigation buttons */
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fe3f40;
+  border: none;
+  color: white;
+  font-size: 28px;        /* Larger arrow */
+  width: 44px;            /* Bigger buttons */
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 3px 12px rgba(254, 63, 64, 0.7);
+  user-select: none;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-btn:hover {
+  background-color: #d83232;
+}
+
+.nav-btn:focus {
+  outline: none;
+}
+
+.prev-btn {
+  left: 15px;  /* Slightly more spacing from left */
+}
+
+.next-btn {
+  right: 15px; /* Slightly more spacing from right */
+}
+.testimonial-heading {
+  font-family: 'Poppins', sans-serif;
+  color: #fe3f40; /* primary color */
+  /* Additional styling if needed */
+}
+  </style>
+    
+    <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.faq-question').forEach(button => {
+      button.addEventListener('click', () => {
+        const isActive = button.classList.contains('active');
+
+        // Close all other answers
+        document.querySelectorAll('.faq-question.active').forEach(activeBtn => {
+          activeBtn.classList.remove('active');
+          activeBtn.nextElementSibling.style.maxHeight = null;
+          activeBtn.nextElementSibling.style.padding = '0 25px';
+        });
+
+        // Toggle current
+        if (!isActive) {
+          button.classList.add('active');
+          const answer = button.nextElementSibling;
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+          answer.style.padding = '15px 25px 25px';
+        }
+      });
+    });
+  });
+  
+</script>
+
+
+  </head>
+
+  <body>
+    <!-- ***** Preloader Start ***** -->
+    <div id="js-preloader" class="js-preloader">
+      <div class="preloader-inner">
+        <span class="dot"></span>
+        <div class="dots">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+    <!-- ***** Header Area Start ***** -->
+    <header
+      class="header-area header-sticky wow slideInDown"
+      data-wow-duration="0.75s"
+      data-wow-delay="0s"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="main-nav">
+              <!-- ***** Logo Start ***** -->
+              <a href="index.html" class="logo">
+                <h4>Mascots<span>B</span></h4>
+              </a>
+              <!-- ***** Logo End ***** -->
+              <!-- ***** Menu Start ***** -->
+              <ul class="nav">
+                <li class="scroll-to-section">
+                  <a href="#top" class="active">Home</a>
+                </li>
+                <li class="scroll-to-section">
+                  <a href="about.html">About Us</a>
+                </li>
+                <li class="scroll-to-section">
+                  <a href="spoken-english.html">Spoken English</a>
+                </li>
+                <li class="scroll-to-section">
+                  <a href="ielts.html">IELTS Coaching</a>
+                </li>
+                <li class="scroll-to-section"><a href="pte.html">PTE Coaching</a></li>
+                <li class="scroll-to-section">
+                  <a href="visa.html">Visa Counselling</a>
+                </li>
+                <li class="scroll-to-section">
+                  <div class="main-red-button">
+                    <a href="contact.html">Contact</a>
+                  </div>
+                </li>
+              </ul>
+              <a class="menu-trigger">
+                <span>Menu</span>
+              </a>
+              <!-- ***** Menu End ***** -->
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <div
+      class="main-banner wow fadeIn"
+      id="top"
+      data-wow-duration="1s"
+      data-wow-delay="0.5s"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="row">
+              <div class="col-lg-6 align-self-center">
+                <div
+                  class="left-content header-text wow fadeInLeft"
+                  data-wow-duration="1s"
+                  data-wow-delay="1s"
+                >
+                  <h6>Welcome to MascotsB</h6>
+                  <h2>
+                    Study Abroad <em>Visa Consultant</em> &amp;
+                    <span>IELTS/PTE</span> in Gandhinagar
+                  </h2>
+                  <!-- <p>Space Dynamic is a professional looking HTML template using a Bootstrap 5 (beta 2). This CSS template is free for you provided by <a rel="nofollow" href="https://templatemo.com/page/1" target="_parent">TemplateMo</a>.</p> -->
+                  <!-- <form id="search" action="#" method="GET">
+                  <fieldset>
+                    <input type="address" name="address" class="email" placeholder="Your website URL..." autocomplete="on" required>
+                  </fieldset>
+                  <fieldset>
+                    <button type="submit" class="main-button">Analyze Site</button>
+                  </fieldset>
+                </form> -->
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div
+                  class="right-image wow fadeInRight"
+                  data-wow-duration="1s"
+                  data-wow-delay="0.5s"
+                >
+                  <img
+                    src="assets/images/banner-right-image.png"
+                    alt="team meeting"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="about" class="about-us section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div
+              class="left-image wow fadeIn"
+              data-wow-duration="1s"
+              data-wow-delay="0.2s"
+            >
+              <img
+                src="assets/images/about-left-image.png"
+                alt="person graphic"
+              />
+            </div>
+          </div>
+          <div class="col-lg-8 align-self-center">
+            <div class="services">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div
+                    class="item wow fadeIn"
+                    data-wow-duration="1s"
+                    data-wow-delay="0.5s"
+                  >
+                    <div class="icon">
+                      <img
+                        src="assets/images/service-icon-01.png"
+                        alt="reporting"
+                      />
+                    </div>
+                    <div class="right-text">
+                      <h4>Coaching</h4>
+                      <p>
+                        IELTS/PTE coaching in Gandhinagar is right here for you!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div
+                    class="item wow fadeIn"
+                    data-wow-duration="1s"
+                    data-wow-delay="0.7s"
+                  >
+                    <div class="icon">
+                      <img src="assets/images/service-icon-02.png" alt="" />
+                    </div>
+                    <div class="right-text">
+                      <h4>About US</h4>
+                      <p>
+                        MascotsB is a very prominent name in Overseas Education
+                        and training
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div
+                    class="item wow fadeIn"
+                    data-wow-duration="1s"
+                    data-wow-delay="0.9s"
+                  >
+                    <div class="icon">
+                      <img src="assets/images/service-icon-03.png" alt="" />
+                    </div>
+                    <div class="right-text">
+                      <h4>Study Abroad</h4>
+                      <p>
+                        Planning to study overseas? Get the best guidance here.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div
+                    class="item wow fadeIn"
+                    data-wow-duration="1s"
+                    data-wow-delay="1.1s"
+                  >
+                    <div class="icon">
+                      <img src="assets/images/service-icon-04.png" alt="" />
+                    </div>
+                    <div class="right-text">
+                      <h4>Contact</h4>
+                      <p>
+                        Get the Right Guidance and Information. Contact Us
+                        Today!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Grow -->
+
+<section id="courses" class="our-services section" style="background-color: #fdfdfd;">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-lg-12 text-center">
+        <h2 class="fw-bold">Courses <em style="color:#fe3f40;">We Offer</em></h2>
+        <p class="text-muted">Learn, grow, and succeed with our expert-led training programs</p>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <!-- Spoken English -->
+      <div class="col-md-6 col-lg-6">
+        <div class="card border-0 shadow rounded-4 h-100 p-4 course-card hover-effect">
+          <div class="d-flex align-items-center mb-3">
+            <i class="fas fa-comments fa-2x me-3 text-danger"></i>
+            <a href="spoken-english.html"><h4 class="mb-0">Spoken English</h4></a>
+          </div>
+          <p class="text-muted">Level: Beginner to Advanced. Improve fluency, vocabulary, and confidence in daily conversations.</p>
+        </div>
+      </div>
+
+      <!-- IELTS / PTE -->
+      <div class="col-md-6 col-lg-6">
+        <div class="card border-0 shadow rounded-4 h-100 p-4 course-card hover-effect">
+          <div class="d-flex align-items-center mb-3">
+            <i class="fas fa-graduation-cap fa-2x me-3 text-danger"></i>
+            <a href="ielts.html"><h4 class="mb-0">IELTS Training</h4></a>
+          </div>
+          <p class="text-muted">Crack your desired band in Academic & General modules with smart strategies and expert tips.</p>
+        </div>
+      </div>
+
+      <!-- Student Visa -->
+      <div class="col-md-6 col-lg-6">
+        <div class="card border-0 shadow rounded-4 h-100 p-4 course-card hover-effect">
+          <div class="d-flex align-items-center mb-3">
+            <i class="fas fa-plane-departure fa-2x me-3 text-danger"></i>
+            <a href="visa.html"><h4 class="mb-0">Student Visa Consultancy</h4></a>
+          </div>
+          <p class="text-muted">Get complete support for study visas – Canada, UK, Australia, and more.</p>
+        </div>
+      </div>
+
+      <!-- Personality Dev -->
+      <div class="col-md-6 col-lg-6">
+        <div class="card border-0 shadow rounded-4 h-100 p-4 course-card hover-effect">
+          <div class="d-flex align-items-center mb-3">
+            <i class="fas fa-user-tie fa-2x me-3 text-danger"></i>
+            <a href="pte.html"><h4 class="mb-0" style="font: bold;">PTE Training</h4></a>
+          </div>
+          <p class="text-muted">Master interviews, communication, and body language with practical coaching.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- POrtfolio -->
+
+    <div id="portfolio" class="our-portfolio section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 offset-lg-3">
+            <div
+              class="section-heading wow bounceIn"
+              data-wow-duration="1s"
+              data-wow-delay="0.2s"
+            >
+              <h2>
+                See What Our Classes <em>Offers</em> &amp; What We
+                <span>Provide</span>
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-sm-6">
+            <a href="#">
+              <div
+                class="item wow bounceInUp"
+                data-wow-duration="1s"
+                data-wow-delay="0.3s"
+              >
+                <div class="hidden-content">
+                  <h4>PTE Coaching</h4>
+                  <p style="font-size: smaller">
+                    PTE Academic measures your English speaking, listening,
+                    reading, and writing skills in a single, short test.
+                  </p>
+                </div>
+                <div class="showed-content">
+                  <img src="assets/images/portfolio-image.png" alt="" />
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <a href="#">
+              <div
+                class="item wow bounceInUp"
+                data-wow-duration="1s"
+                data-wow-delay="0.4s"
+              >
+                <div class="hidden-content">
+                  <h4>IELTS Coaching</h4>
+                  <p style="font-size: small">
+                    IELTS assesses all of your English skills — listening,
+                    reading, writing and speaking and is designed to reflect how
+                    you will use English at various places.
+                  </p>
+                </div>
+                <div class="showed-content">
+                  <img src="assets/images/portfolio-image.png" alt="" />
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <a href="#">
+              <div
+                class="item wow bounceInUp"
+                data-wow-duration="1s"
+                data-wow-delay="0.5s"
+              >
+                <div class="hidden-content">
+                  <h4>CONSULTATION & VISA</h4>
+                  <p style="font-size: x-small">
+                    We offer our students an accurate study abroad student visa
+                    consultation and a 360-degree overview for applying for
+                    visas to study overseas.
+                  </p>
+                </div>
+                <div class="showed-content">
+                  <img src="assets/images/portfolio-image.png" alt="" />
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <a href="#">
+              <div
+                class="item wow bounceInUp"
+                data-wow-duration="1s"
+                data-wow-delay="0.6s"
+              >
+                <div class="hidden-content">
+                  <h4>Study Abroad</h4>
+                  <p>Planning to study overseas? Get the best guidance here.</p>
+                </div>
+                <div class="showed-content">
+                  <img src="assets/images/portfolio-image.png" alt="" />
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- FAQ Section -->
+<div id="faq" class="frequently-asked-questions section" style="margin-top: 80px;">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.25s">
+        <div class="section-heading text-center">
+          <h2>Frequently Asked <em>Questions</em></h2>
+          <p>Answers to common queries to help you understand our services better.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-8 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.25s">
+        <div class="faq-accordion">
+          <div class="faq-item">
+            <button class="faq-question">
+              What services do you offer?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>We offer spoken English classes, IELTS, PTE coaching, and visa consultancy services.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              How can I enroll in your courses?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>You can contact us via our contact page or call us directly to register for any course.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              Do you provide online classes?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>No, we don't provide online classes </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              What is the duration of the IELTS preparation course?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Typically, the IELTS course lasts for 6 to 8 weeks, depending on the student's level.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              Can you assist with visa documentation?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes, our visa consultancy helps you with documentation and application processes for multiple countries.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    <!-- Contact US -->
+
+    <div id="contact" class="contact-us section">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-lg-6 align-self-center wow fadeInLeft"
+            data-wow-duration="0.5s"
+            data-wow-delay="0.25s"
+          >
+            <div class="section-heading">
+              <h2>
+                Feel Free To Send Us a Message About Your Carrier Guidance
+              </h2>
+              <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doer ket eismod tempor incididunt ut labore et dolores</p> -->
+              <div class="phone-info">
+                <h4>
+                  For any enquiry, Call Us:
+                  <span
+                    ><i class="fa fa-phone"></i>
+                    <a href="#">91+ 9998201209</a></span
+                  >
+                </h4>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-6 wow fadeInRight"
+            data-wow-duration="0.5s"
+            data-wow-delay="0.25s"
+          >
+            <form id="contact" action="connect.php" method="post">
+              <div class="row">
+                <div class="col-lg-6">
+                  <fieldset>
+                    <input
+                      type="name"
+                      name="name"
+                      id="name"
+                      placeholder="Name"
+                      autocomplete="on"
+                      required
+                    />
+                  </fieldset>
+                </div>
+                <div class="col-lg-6">
+                  <fieldset>
+                    <input
+                      type="surname"
+                      name="surname"
+                      id="surname"
+                      placeholder="Surname"
+                      autocomplete="on"
+                      required
+                    />
+                  </fieldset>
+                </div>
+                <div class="col-lg-12">
+                  <fieldset>
+                    <input
+                      type="text"
+                      name="email"
+                      id="email"
+                      pattern="[^ @]*@[^ @]*"
+                      placeholder="Your Email"
+                      required=""
+                    />
+                  </fieldset>
+                </div>
+                <div class="col-lg-12">
+                  <fieldset>
+                    <textarea
+                      name="message"
+                      type="text"
+                      class="form-control"
+                      id="message"
+                      placeholder="Message"
+                      required=""
+                    ></textarea>
+                  </fieldset>
+                </div>
+                <div class="col-lg-12">
+                  <fieldset>
+                    <button type="submit" id="form-submit" class="main-button">
+                      Send Message
+                    </button>
+                  </fieldset>
+                </div>
+              </div>
+              <div class="contact-dec">
+                <img src="assets/images/contact-decoration.png" alt="" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonials -->
+    <h2 class="testimonial-heading text-center font-bold text-3xl mb-8 text-primary">
+    Student Testimonials
+  </h2>
+    <section class="testimonial-slider">
+      
+  <div class="slides">
+    <div class="slide">
+      <p>“MascotsB helped me improve my speaking skills. Trainers made the sessions fun and practical!”</p>
+      <h4>Aarti Singh</h4>
+      <span>Spoken English</span>
+    </div>
+    <div class="slide">
+      <p>“Got 7.5 bands in IELTS! Mock tests and guidance from MascotsB made the difference.”</p>
+      <h4>Jay Desai</h4>
+      <span>IELTS Coaching</span>
+    </div>
+    <div class="slide">
+      <p>“Great support for my visa process. Everything was smooth and on time.”</p>
+      <h4>Sana Kapoor</h4>
+      <span>Visa Counselling</span>
+    </div>
+    <div class="slide">
+      <p>“PTE coaching sessions were intense and focused. Got the score I needed for Australia!”</p>
+      <h4>Ravi Sharma</h4>
+      <span>PTE Coaching</span>
+    </div>
+  </div>
+
+  <button class="nav-btn prev-btn" aria-label="Previous Slide">&#10094;</button>
+  <button class="nav-btn next-btn" aria-label="Next Slide">&#10095;</button>
+</section>
+
+
+
+    <!-- Footer Start -->
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-lg-12 wow fadeIn"
+            data-wow-duration="1s"
+            data-wow-delay="0.25s"
+          >
+            <p>
+              © Copyright 2025 MascotsB. All Rights Reserved.
+
+              <br />Design:
+              <a rel="nofollow" href="https://www.linkedin.com/in/divyeshrupala157"
+                >Divyesh Rupala</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Footer end -->
+
+    <!-- Scripts -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/animation.js"></script>
+    <script src="assets/js/imagesloaded.js"></script>
+    <script src="assets/js/templatemo-custom.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
